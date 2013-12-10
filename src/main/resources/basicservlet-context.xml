@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="fr.univbrest.masterdosi.spring.ApplicationContextProvider"/>
+
+<!-- TODO ETAPE1 Décommenter la partie ci-dessous pour déclarer le bean testService avec l'injection de testDao -->
+<!-- 	<bean id="testService" class="fr.univbrest.masterdosi.service.impl.TestServiceImpl"> -->
+<!-- 		<property name="testDao" ref="testDao"/> -->
+<!-- 	</bean> -->
+
+
+	<bean id="testDao" class="fr.univbrest.masterdosi.dao.impl.TestDaoImpl">
+	</bean>
+
+</beans>
